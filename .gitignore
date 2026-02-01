@@ -1,0 +1,57 @@
+# --- Python & Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.python-version
+
+# --- UV (Package Manager) ---
+.uv/
+uv.lock
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+# Avoid committing large data outputs inside notebooks
+.virtual_documents/
+
+# --- Data Science & Large Files ---
+# Ignore large datasets and models commonly used in ML
+*.csv
+*.json
+*.parquet
+*.pickle
+*.h5
+*.joblib
+*.npy
+*.npz
+data/
+outputs/
+models/
+
+# --- VS Code & IDEs ---
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+*.code-workspace
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- MLOps & Deployment ---
+# Streamlit
+.streamlit/config.toml
+# Log files
+*.log
